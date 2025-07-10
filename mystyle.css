@@ -12,4 +12,6 @@ th,td { border: ridge thick black; }
 .scroll-infinity_item { width: calc(100vw / 6);}
 .scroll-infinity_item>img { width: 100%;}
 
+td.important {color: gold; }
+
 
