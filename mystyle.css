@@ -1,12 +1,15 @@
 h1 { color: red; }
 th,td { border: ridge thick black; }
-.loop_wrap { display: flex; width: 100vw; height: 300px; overflow: hidden;}
-.loop_wrap img {width: auto; height: 100%;}
-@keyframes loop { 0% { transform: translateX(100%);}
+
+@keyframes infinity-scroll-left { from { transform: translateX(0);}
  to { transform: translateX(-100%);} }
-@keyframes loop2 { 0% { transform: translateX(0);}
- to { transform: translateX(-200%);} }
-.loop_wrap img:first-child { animation: loop 50s -25s linear infinite; }
-.loop_wrap img:last-child { animation: loop2 50s linear infinite; }
+.scroll-infinity_wrap {
+ display: flex; overflow: hidden;}
+.scroll-infinity_list {
+ display: flex; list-style: none; padding: 0}
+.scroll-infinity_list--left {
+ animation: infinity-scroll-left 80s infinite 0.5s both;}
+.scroll-infinity_item { width: calc(100vw / 6);}
+.scroll-infinity_item>img { width: 100%;}
 
 
