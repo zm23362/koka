@@ -1,6 +1,6 @@
 h1 { color: red; }
 th,td { border: ridge thick black; }
-.loop_wrap { display: flex; width: 100vw; height: 300vw; overflow: hidden;}
+.loop_wrap { display: flex; width: 100vw; height: 300px; overflow: hidden;}
 .loop_wrap img {width: auto; height: 100%;}
 @keyframes loop { 0% { transform: translateX(100%);}
  to { transform: translateX(-100%);} }
